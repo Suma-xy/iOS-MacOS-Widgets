@@ -3,3 +3,7 @@
 // icon-color: blue; icon-glyph: birthday-cake;
 // Version 0.0.1
 
+class BirthdayCountdown
+{
+	
+}
