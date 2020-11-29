@@ -5,5 +5,14 @@
 
 class BirthdayCountdown
 {
+    run()
+    {
+        let widget = this.deployWidget();
+        if (!config.runsInWidget) {
+            widget.presentSmall();
+        }
+        Script.setWidget(widget);
+        Script.complete();
+    }
 	
 }
