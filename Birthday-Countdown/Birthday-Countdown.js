@@ -16,3 +16,27 @@ class BirthdayCountdown
     }
 	
 }
+
+deployWidget()
+{
+    let list = new ListWidget();
+    list.setPadding(12, 12, 12, 12);
+
+    let titleTxt = list.addText("🎂 My Birthday");
+    titleTxt.font = Font.mediumSystemFont(13);
+
+    list.addText("");
+
+    let daysLeft = this.calculateDaysLeft();
+    let daysLeftTxt = list.addText(daysLeft + " Days");
+    daysLeftTxt.textColor = this.decideDisplayColor(daysLeft);
+    daysLeftTxt.font = Font.boldSystemFont(24);
+
+    list.addText("");
+
+    let treeBottomLine = list.addText("LOL");
+    treeBottomLine.font = Font.boldSystemFont(24);
+
+    return list
+}
+
